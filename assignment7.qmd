@@ -1,0 +1,111 @@
+---
+title: "Assignment 7"
+author: "Miracle Ephraim"
+format: html
+---
+
+### Question 1
+_data, myVar, and t0T4L-4M0UnT are the valid variable names, as they start with either a letter or underscore and do not fall under Python's reserved word list.
+
+### Question 2
+is factors in identity of the inputs when determining if they are identical. 3 is an integer while 3.0 if a float so python does not seem them as identical.
+
+### Question 3
+``` {python}
+
+s = "DataScienceIsAWesome"
+s.find("Science")
+s.find("Is")
+
+s[4:11]
+s_list = list(s)
+s_list.reverse()
+
+x=0
+for i in range(len(s)):
+    print(s[x])
+    x = x+2
+    if x >= len(s):
+        break
+```
+
+### Question 4
+``` {python}
+
+grades = {
+    "Alice": 90,
+    "Bob": 85,
+    "Charlie": 80,
+    "Eve": 95
+}
+
+grades["David"] = 87
+
+grades["Alice"] = 95
+
+del grades["Charlie"]
+
+grades
+
+```
+
+### Question 5
+// is floor division and rounds down the calculated dividend so the output remains as an integer. / is regular division, so outputs may not necessarily remain as integers if the result has a decimal.
+
+``` {python}
+
+#will have the same output
+6 / 3 
+6 // 3
+
+#will have different outputs
+6 / 4
+6 // 4
+
+```
+
+### Question 6
+``` {python}
+
+names = ["Andrew", "Betty", "Charlie", "Daniel", "Edward", "Frank", "George", "Hannah", "Isaac", "Jack"]
+
+names[0].find("A")
+
+names_subset = []
+for i in range(9):
+    if names[i].find("A") != -1 or names[i].find("a") != -1:
+        names_subset.append(names[i])
+
+names_subset
+
+```
+
+### Question 7 
+5 += (5 * (5-1)) = 25
+Order of operations in python follows PEMDAS, so x-1 is calculated first, then multiplied by x, with the final output added to x.
+
+### Question 8
+``` {python}
+lst = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+lst[0][1][1]
+lst[1][1].pop(0)
+lst[1][1].insert(0, 10)
+print(lst)
+```
+
+### Question 9
+```{python}
+
+my_list = [1, 2, 3, 4, 5, 6, 7]
+
+result = "long" if len(my_list) > 5 else "short"
+
+result
+```
+
+### Question 10
+```{python}
+tup = [{x, x**3} for x in range(1,11)]
+tup
+```
